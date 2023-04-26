@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://hv40hd6vaom0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4g3pw"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"cima",
+"speed": 5.0
+}]
+
+[node name="mundo" type="Node2D"]
+
+[node name="sprite" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4g3pw")
+animation = &"cima"
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
